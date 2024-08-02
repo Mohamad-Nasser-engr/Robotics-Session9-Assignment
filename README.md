@@ -20,7 +20,7 @@ git clone git@github.com:Mohamad-Nasser-engr/Robotics-Session9-Assignment.git
 ```
 - Build the workspace:
 ```bash
-cd Robotics-Session9-Assignment/Session7_ros2_ws
+cd Robotics-Session9-Assignment/Session9_ros2_ws
 ```
 ```bash
 colcon build
