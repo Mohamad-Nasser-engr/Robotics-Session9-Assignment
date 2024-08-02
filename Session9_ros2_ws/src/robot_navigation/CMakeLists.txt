@@ -83,6 +83,10 @@ ${rosidl_typesupport_cpp_INCLUDE_DIRS})
 install(TARGETS wall_finder_server wall_follower lap_time_server lap_time_client
 DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+)
+
 
 
 ament_package()

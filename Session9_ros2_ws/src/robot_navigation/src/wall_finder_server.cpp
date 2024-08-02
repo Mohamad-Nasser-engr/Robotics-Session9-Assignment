@@ -58,7 +58,11 @@ int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<WallFinderServer>();
+    auto start = std::chrono::high_resolution_clock::now();
     rclcpp::spin(node);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    std::cout << "It took " << duration.count() << " seconds to reach a wall." << std::endl;
     rclcpp::shutdown();
     return 0;
 }

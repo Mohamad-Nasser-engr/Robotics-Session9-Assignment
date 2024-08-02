@@ -51,6 +51,7 @@ void LapTimeServer::handle_accepted(const std::shared_ptr<GoalHandleMeasureLapTi
 
 void LapTimeServer::execute_callback(const std::shared_ptr<GoalHandleMeasureLapTime> goal_handle)
 {
+    
     RCLCPP_INFO(this->get_logger(), "Executing goal to measure lap time.");
     auto result = std::make_shared<MeasureLapTime::Result>();
 

@@ -25,6 +25,7 @@
     ],
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "functional": "cpp"
+        "functional": "cpp",
+        "chrono": "cpp"
     }
 }

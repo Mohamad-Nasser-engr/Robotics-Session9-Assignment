@@ -50,11 +50,12 @@ void LapTimeClient::feedback_callback(
     GoalHandleMeasureLapTime::SharedPtr,
     const std::shared_ptr<const MeasureLapTime::Feedback> feedback
 ) {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Total lap time: %.3f seconds.", 0.001 * round(1000 * feedback->elapsed_time));
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Elapsed lap time: %.3f seconds.", 0.001 * round(1000 * feedback->elapsed_time));
 
 }
 
 void LapTimeClient::result_callback(const GoalHandleMeasureLapTime::WrappedResult & result) {
+
     switch (result.code) {
         case rclcpp_action::ResultCode::SUCCEEDED:
             break;
@@ -69,7 +70,6 @@ void LapTimeClient::result_callback(const GoalHandleMeasureLapTime::WrappedResul
             return;
     }
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Total lap time: %.3f seconds.", 0.001 * round(1000 * result.result->total_time));
-
     rclcpp::shutdown();
 }
 
