@@ -1,0 +1,3 @@
+[ 25%] Built target wall_finder_server
+[35m[1mConsolidate compiler generated dependencies of target lap_time_client[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.o[0m

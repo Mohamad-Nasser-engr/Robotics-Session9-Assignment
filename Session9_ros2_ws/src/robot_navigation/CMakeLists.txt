@@ -8,9 +8,11 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(custom_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(rosidl_default_runtime REQUIRED)
 find_package(rosidl_typesupport_cpp REQUIRED)
 
@@ -28,6 +30,8 @@ endif()
 
 add_executable(wall_finder_server src/wall_finder_server.cpp)
 add_executable(wall_follower src/wall_follower.cpp)
+add_executable(lap_time_server src/lap_time_server.cpp)
+add_executable(lap_time_client src/lap_time_client.cpp)
 ament_target_dependencies(
   wall_finder_server 
   rclcpp custom_interfaces
@@ -36,13 +40,37 @@ ament_target_dependencies(
   rosidl_default_runtime
   rosidl_typesupport_cpp)
 
-  ament_target_dependencies(
-    wall_follower 
-    rclcpp custom_interfaces
-    sensor_msgs
-    geometry_msgs
-    rosidl_default_runtime
-    rosidl_typesupport_cpp)
+ament_target_dependencies(
+  wall_follower 
+  rclcpp custom_interfaces
+  sensor_msgs
+  geometry_msgs
+  rosidl_default_runtime
+  rosidl_typesupport_cpp)
+
+ament_target_dependencies(
+  lap_time_server 
+  rclcpp 
+  rclcpp_action
+  nav_msgs
+  custom_interfaces
+  sensor_msgs
+  geometry_msgs
+  rosidl_default_runtime
+  rosidl_typesupport_cpp)
+
+ament_target_dependencies(
+  lap_time_client 
+  rclcpp 
+  rclcpp_action
+  nav_msgs
+  custom_interfaces
+  sensor_msgs
+  geometry_msgs
+  rosidl_default_runtime
+  rosidl_typesupport_cpp)
+
+    
 
 include_directories(include
 ${rclcpp_INCLUDE_DIRS}
@@ -52,7 +80,7 @@ ${sensor_msgs_INCLUDE_DIRS}
 ${rosidl_default_runtime_INCLUDE_DIRS}
 ${rosidl_typesupport_cpp_INCLUDE_DIRS})
 
-install(TARGETS wall_finder_server wall_follower
+install(TARGETS wall_finder_server wall_follower lap_time_server lap_time_client
 DESTINATION lib/${PROJECT_NAME})
 
 

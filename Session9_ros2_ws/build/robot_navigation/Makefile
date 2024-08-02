@@ -223,6 +223,80 @@ wall_follower/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_follower.dir/build.make CMakeFiles/wall_follower.dir/build
 .PHONY : wall_follower/fast
 
+#=============================================================================
+# Target rules for targets named lap_time_server
+
+# Build rule for target.
+lap_time_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lap_time_server
+.PHONY : lap_time_server
+
+# fast build rule for target.
+lap_time_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/build
+.PHONY : lap_time_server/fast
+
+#=============================================================================
+# Target rules for targets named lap_time_client
+
+# Build rule for target.
+lap_time_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lap_time_client
+.PHONY : lap_time_client
+
+# fast build rule for target.
+lap_time_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/build
+.PHONY : lap_time_client/fast
+
+src/lap_time_client.o: src/lap_time_client.cpp.o
+.PHONY : src/lap_time_client.o
+
+# target to build an object file
+src/lap_time_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.o
+.PHONY : src/lap_time_client.cpp.o
+
+src/lap_time_client.i: src/lap_time_client.cpp.i
+.PHONY : src/lap_time_client.i
+
+# target to preprocess a source file
+src/lap_time_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.i
+.PHONY : src/lap_time_client.cpp.i
+
+src/lap_time_client.s: src/lap_time_client.cpp.s
+.PHONY : src/lap_time_client.s
+
+# target to generate assembly for a file
+src/lap_time_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.s
+.PHONY : src/lap_time_client.cpp.s
+
+src/lap_time_server.o: src/lap_time_server.cpp.o
+.PHONY : src/lap_time_server.o
+
+# target to build an object file
+src/lap_time_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/src/lap_time_server.cpp.o
+.PHONY : src/lap_time_server.cpp.o
+
+src/lap_time_server.i: src/lap_time_server.cpp.i
+.PHONY : src/lap_time_server.i
+
+# target to preprocess a source file
+src/lap_time_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/src/lap_time_server.cpp.i
+.PHONY : src/lap_time_server.cpp.i
+
+src/lap_time_server.s: src/lap_time_server.cpp.s
+.PHONY : src/lap_time_server.s
+
+# target to generate assembly for a file
+src/lap_time_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/src/lap_time_server.cpp.s
+.PHONY : src/lap_time_server.cpp.s
+
 src/wall_finder_server.o: src/wall_finder_server.cpp.o
 .PHONY : src/wall_finder_server.o
 
@@ -286,8 +360,16 @@ help:
 	@echo "... test"
 	@echo "... robot_navigation_uninstall"
 	@echo "... uninstall"
+	@echo "... lap_time_client"
+	@echo "... lap_time_server"
 	@echo "... wall_finder_server"
 	@echo "... wall_follower"
+	@echo "... src/lap_time_client.o"
+	@echo "... src/lap_time_client.i"
+	@echo "... src/lap_time_client.s"
+	@echo "... src/lap_time_server.o"
+	@echo "... src/lap_time_server.i"
+	@echo "... src/lap_time_server.s"
 	@echo "... src/wall_finder_server.o"
 	@echo "... src/wall_finder_server.i"
 	@echo "... src/wall_finder_server.s"

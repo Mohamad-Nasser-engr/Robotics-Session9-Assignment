@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ro
 # The main recursive "all" target.
 all: CMakeFiles/wall_finder_server.dir/all
 all: CMakeFiles/wall_follower.dir/all
+all: CMakeFiles/lap_time_server.dir/all
+all: CMakeFiles/lap_time_client.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,8 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_navigation_uninstall.dir/clean
 clean: CMakeFiles/wall_finder_server.dir/clean
 clean: CMakeFiles/wall_follower.dir/clean
+clean: CMakeFiles/lap_time_server.dir/clean
+clean: CMakeFiles/lap_time_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -137,7 +141,7 @@ CMakeFiles/robot_navigation_uninstall.dir/clean:
 CMakeFiles/wall_finder_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_finder_server.dir/build.make CMakeFiles/wall_finder_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_finder_server.dir/build.make CMakeFiles/wall_finder_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=1,2 "Built target wall_finder_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=5,6 "Built target wall_finder_server"
 .PHONY : CMakeFiles/wall_finder_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +167,7 @@ CMakeFiles/wall_finder_server.dir/clean:
 CMakeFiles/wall_follower.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_follower.dir/build.make CMakeFiles/wall_follower.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_follower.dir/build.make CMakeFiles/wall_follower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=3,4 "Built target wall_follower"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=7,8 "Built target wall_follower"
 .PHONY : CMakeFiles/wall_follower.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +185,58 @@ wall_follower: CMakeFiles/wall_follower.dir/rule
 CMakeFiles/wall_follower.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wall_follower.dir/build.make CMakeFiles/wall_follower.dir/clean
 .PHONY : CMakeFiles/wall_follower.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lap_time_server.dir
+
+# All Build rule for target.
+CMakeFiles/lap_time_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=3,4 "Built target lap_time_server"
+.PHONY : CMakeFiles/lap_time_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lap_time_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lap_time_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles 0
+.PHONY : CMakeFiles/lap_time_server.dir/rule
+
+# Convenience name for target.
+lap_time_server: CMakeFiles/lap_time_server.dir/rule
+.PHONY : lap_time_server
+
+# clean rule for target.
+CMakeFiles/lap_time_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_server.dir/build.make CMakeFiles/lap_time_server.dir/clean
+.PHONY : CMakeFiles/lap_time_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lap_time_client.dir
+
+# All Build rule for target.
+CMakeFiles/lap_time_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles --progress-num=1,2 "Built target lap_time_client"
+.PHONY : CMakeFiles/lap_time_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lap_time_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lap_time_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/CMakeFiles 0
+.PHONY : CMakeFiles/lap_time_client.dir/rule
+
+# Convenience name for target.
+lap_time_client: CMakeFiles/lap_time_client.dir/rule
+.PHONY : lap_time_client
+
+# clean rule for target.
+CMakeFiles/lap_time_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lap_time_client.dir/build.make CMakeFiles/lap_time_client.dir/clean
+.PHONY : CMakeFiles/lap_time_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

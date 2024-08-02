@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "wall_finder_server" "wall_follower" "DESTINATION" "lib/robot_navigation")
+# install("TARGETS" "wall_finder_server" "wall_follower" "lap_time_server" "lap_time_client" "DESTINATION" "lib/robot_navigation")
 include("/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_navigation" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

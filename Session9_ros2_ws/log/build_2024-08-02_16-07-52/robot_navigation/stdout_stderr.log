@@ -1,0 +1,24 @@
+[ 33%] Built target wall_finder_server
+[35m[1mConsolidate compiler generated dependencies of target lap_time_server[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lap_time_server.dir/src/lap_time_server.cpp.o[0m
+In file included from [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:1[m[K:
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.h:8:1:[m[K [01;31m[Kerror: [m[Knew types may not be defined in a return type
+    8 | [01;31m[Kclass[m[K LapTimeServer : public rclcpp::Node{
+      | [01;31m[K^~~~~[m[K
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.h:8:1:[m[K [01;36m[Knote: [m[K(perhaps a semicolon is missing after the definition of ‘[01m[KLapTimeServer[m[K’)
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.h:8:1:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse LapTimeServer::handle_goal(const GoalUUID&, std::shared_ptr<const custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:34:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 |     rclcpp_action::GoalResponse LapTimeServer::handle_goal([01;35m[Kconst rclcpp_action::GoalUUID & uuid[m[K, std::shared_ptr<const MeasureLapTime::Goal> goal)
+      |                                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:34:142:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | Response LapTimeServer::handle_goal(const rclcpp_action::GoalUUID & uuid, [01;35m[Kstd::shared_ptr<const MeasureLapTime::Goal> goal[m[K)
+      |                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse LapTimeServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::MeasureLapTime> >)[m[K’:
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_server.cpp:40:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 |     rclcpp_action::CancelResponse LapTimeServer::handle_cancel([01;35m[Kconst std::shared_ptr<GoalHandleMeasureLapTime> goal_handle[m[K)
+      |                                                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lap_time_server.dir/build.make:76: CMakeFiles/lap_time_server.dir/src/lap_time_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/lap_time_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

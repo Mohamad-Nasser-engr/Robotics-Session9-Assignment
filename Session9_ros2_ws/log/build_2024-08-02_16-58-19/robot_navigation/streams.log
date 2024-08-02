@@ -1,0 +1,96 @@
+[0.195s] Invoking command in '/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation': CMAKE_PREFIX_PATH=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/robot_navigation:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/navigation_robot:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/session6_assignment:/home/mohamad/Inmind/ros2_ws/install/session5_academy:/home/mohamad/Inmind/Robotics-Session5-Ros2/session5_ros2_ws/install/session5_assignment:/home/mohamad/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation -- -j4 -l4
+[0.423s] [ 25%] Built target wall_finder_server
+[0.481s] [35m[1mConsolidate compiler generated dependencies of target lap_time_client[0m
+[0.550s] [ 37%] [32mBuilding CXX object CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.o[0m
+[6.199s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:[m[K In lambda function:
+[6.199s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:25:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} has no member named ‘[01m[Kasync_result_callback[m[K’; did you mean ‘[01m[Kset_result_callback[m[K’?
+[6.199s]    25 |             goal_handle_->[01;31m[Kasync_result_callback[m[K([this](auto result) {
+[6.200s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.200s]       |                           [32m[Kset_result_callback[m[K
+[6.201s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:33:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} has no member named ‘[01m[Kasync_feedback_callback[m[K’; did you mean ‘[01m[Kset_feedback_callback[m[K’?
+[6.201s]    33 |             goal_handle_->[01;31m[Kasync_feedback_callback[m[K([this](auto feedback) {
+[6.201s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.201s]       |                           [32m[Kset_feedback_callback[m[K
+[6.201s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:[m[K In member function ‘[01m[Kvoid LapTimeActionClient::send_goal()[m[K’:
+[6.201s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:14:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp_action::Client<custom_interfaces::action::MeasureLapTime>::async_send_goal(custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> >&, LapTimeActionClient::send_goal()::<lambda(auto:40)>, LapTimeActionClient::send_goal()::<lambda(auto:43)>, LapTimeActionClient::send_goal()::<lambda(auto:44)>)[m[K’
+[6.201s]    14 |     auto send_goal_future = [01;31m[Kclient_->async_send_goal([m[K
+[6.201s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.201s]    15 | [01;31m[K        goal_msg,[m[K
+[6.202s]       |         [01;31m[K~~~~~~~~~[m[K                                    
+[6.202s]    16 | [01;31m[K        [this](auto goal_handle) {[m[K
+[6.202s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                   
+[6.202s]    17 | [01;31m[K            if (!goal_handle) {[m[K
+[6.202s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                      
+[6.202s]    18 | [01;31m[K                RCLCPP_ERROR(this->get_logger(), "Goal was rejected");[m[K
+[6.202s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.202s]    19 | [01;31m[K                return;[m[K
+[6.202s]       |                 [01;31m[K~~~~~~~[m[K                              
+[6.202s]    20 | [01;31m[K            }[m[K
+[6.202s]       |             [01;31m[K~[m[K                                        
+[6.202s]    21 | [01;31m[K            RCLCPP_INFO(this->get_logger(), "Goal accepted");[m[K
+[6.202s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.202s]    22 | [01;31m[K            goal_handle_ = goal_handle;[m[K
+[6.202s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              
+[6.202s]    23 | 
+[6.202s]       |                                                      
+[6.203s]    24 | [01;31m[K            // Set up result and feedback callbacks[m[K
+[6.203s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[6.203s]    25 | [01;31m[K            goal_handle_->async_result_callback([this](auto result) {[m[K
+[6.203s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.203s]    26 | [01;31m[K                if (result->get_status() == rclcpp_action::GoalStatus::STATUS_SUCCEEDED) {[m[K
+[6.203s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.203s]    27 | [01;31m[K                    RCLCPP_INFO(this->get_logger(), "Goal succeeded");[m[K
+[6.203s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.203s]    28 | [01;31m[K                } else {[m[K
+[6.203s]       |                 [01;31m[K~~~~~~~~[m[K                             
+[6.203s]    29 | [01;31m[K                    RCLCPP_ERROR(this->get_logger(), "Goal failed");[m[K
+[6.203s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.203s]    30 | [01;31m[K                }[m[K
+[6.203s]       |                 [01;31m[K~[m[K                                    
+[6.203s]    31 | [01;31m[K            });[m[K
+[6.203s]       |             [01;31m[K~~~[m[K                                      
+[6.204s]    32 | 
+[6.204s]       |                                                      
+[6.204s]    33 | [01;31m[K            goal_handle_->async_feedback_callback([this](auto feedback) {[m[K
+[6.204s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.204s]    34 | [01;31m[K                this->feedback_callback(feedback);[m[K
+[6.204s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K   
+[6.204s]    35 | [01;31m[K            });[m[K
+[6.204s]       |             [01;31m[K~~~[m[K                                      
+[6.204s]    36 | [01;31m[K        },[m[K
+[6.204s]       |         [01;31m[K~~[m[K                                           
+[6.204s]    37 | [01;31m[K        [this](auto feedback) {[m[K
+[6.204s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K                      
+[6.204s]    38 | [01;31m[K            this->feedback_callback(feedback);[m[K
+[6.204s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+[6.205s]    39 | [01;31m[K        },[m[K
+[6.205s]       |         [01;31m[K~~[m[K                                           
+[6.205s]    40 | [01;31m[K        [this](auto result) {[m[K
+[6.205s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                        
+[6.205s]    41 | [01;31m[K            if (result->get_status() == rclcpp_action::GoalStatus::STATUS_SUCCEEDED) {[m[K
+[6.205s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.205s]    42 | [01;31m[K                RCLCPP_INFO(this->get_logger(), "Goal succeeded");[m[K
+[6.205s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.205s]    43 | [01;31m[K            } else {[m[K
+[6.205s]       |             [01;31m[K~~~~~~~~[m[K                                 
+[6.205s]    44 | [01;31m[K                RCLCPP_ERROR(this->get_logger(), "Goal failed");[m[K
+[6.205s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.205s]    45 | [01;31m[K            }[m[K
+[6.205s]       |             [01;31m[K~[m[K                                        
+[6.206s]    46 | [01;31m[K        })[m[K;
+[6.206s]       |         [01;31m[K~~[m[K                                           
+[6.206s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[6.206s]                  from [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.h:5[m[K,
+[6.206s]                  from [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:1[m[K:
+[6.206s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_future<typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr> rclcpp_action::Client<ActionT>::async_send_goal(const Goal&, const rclcpp_action::Client<ActionT>::SendGoalOptions&) [with ActionT = custom_interfaces::action::MeasureLapTime; typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime> >; rclcpp_action::Client<ActionT>::Goal = custom_interfaces::action::MeasureLapTime_Goal_<std::allocator<void> >][m[K’
+[6.206s]   422 |   [01;36m[Kasync_send_goal[m[K(const Goal & goal, const SendGoalOptions & options = SendGoalOptions())
+[6.206s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[6.220s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[6.239s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:[m[K In member function ‘[01m[Kvoid LapTimeActionClient::feedback_callback(std::shared_ptr<custom_interfaces::action::MeasureLapTime_Feedback_<std::allocator<void> > >)[m[K’:
+[6.240s] [01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:49:93:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.240s]    49 | void LapTimeActionClient::feedback_callback([01;35m[Kconst std::shared_ptr<MeasureLapTime::Feedback> feedback[m[K)
+[6.240s]       |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.548s] gmake[2]: *** [CMakeFiles/lap_time_client.dir/build.make:76: CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.o] Error 1
+[7.549s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/lap_time_client.dir/all] Error 2
+[7.549s] gmake: *** [Makefile:146: all] Error 2
+[7.554s] Invoked command in '/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation' returned '2': CMAKE_PREFIX_PATH=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/robot_navigation:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/navigation_robot:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/session6_assignment:/home/mohamad/Inmind/ros2_ws/install/session5_academy:/home/mohamad/Inmind/Robotics-Session5-Ros2/session5_ros2_ws/install/session5_assignment:/home/mohamad/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation -- -j4 -l4

@@ -1,0 +1,10 @@
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:[m[K In member function ‘[01m[Kvoid LapTimeActionClient::send_goal()[m[K’:
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:37:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<custom_interfaces::action::MeasureLapTime>[m[K’} has no member named ‘[01m[Kresult_code[m[K’
+   37 |         if (result->[01;31m[Kresult_code[m[K == rclcpp_action::ResultCode::ACCEPTED) {
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/src/lap_time_client.cpp:37:63:[m[K [01;31m[Kerror: [m[K‘[01m[KACCEPTED[m[K’ is not a member of ‘[01m[Krclcpp_action::ResultCode[m[K’
+   37 |         if (result->result_code == rclcpp_action::ResultCode::[01;31m[KACCEPTED[m[K) {
+      |                                                               [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lap_time_client.dir/build.make:76: CMakeFiles/lap_time_client.dir/src/lap_time_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/lap_time_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
