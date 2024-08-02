@@ -1,0 +1,36 @@
+[0.036s] Invoking command in '/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation': CMAKE_PREFIX_PATH=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/robot_navigation:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/navigation_robot:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/session6_assignment:/home/mohamad/Inmind/ros2_ws/install/session5_academy:/home/mohamad/Inmind/Robotics-Session5-Ros2/session5_ros2_ws/install/session5_assignment:/home/mohamad/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation -- -j4 -l4
+[0.074s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.334s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.426s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.472s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.479s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.496s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.511s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.591s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.593s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.762s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.958s] -- Found custom_interfaces: 0.0.0 (/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[1.122s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.181s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.291s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.392s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.392s] -- Configured cppcheck include dirs: /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/src/robot_navigation/include
+[1.392s] -- Configured cppcheck exclude dirs and/or files: 
+[1.393s] -- Added test 'lint_cmake' to check CMake code style
+[1.394s] -- Added test 'uncrustify' to check C / C++ code style
+[1.394s] -- Configured uncrustify additional arguments: 
+[1.395s] -- Added test 'xmllint' to check XML markup files
+[1.395s] -- Configuring done
+[1.411s] -- Generating done
+[1.413s] -- Build files have been written to: /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation
+[1.483s] [35m[1mConsolidate compiler generated dependencies of target wall_finder_server[0m
+[1.516s] [ 50%] [32m[1mLinking CXX executable wall_finder_server[0m
+[1.973s] /usr/bin/ld: CMakeFiles/wall_finder_server.dir/src/wall_finder_server.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<sensor_msgs::msg::LaserScan_<std::allocator<void> > >()':
+[1.973s] wall_finder_server.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN11sensor_msgs3msg10LaserScan_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN11sensor_msgs3msg10LaserScan_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<sensor_msgs::msg::LaserScan_<std::allocator<void> > >()'
+[1.979s] /usr/bin/ld: CMakeFiles/wall_finder_server.dir/src/wall_finder_server.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<geometry_msgs::msg::Twist_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<geometry_msgs::msg::Twist_<std::allocator<void> > >()':
+[1.979s] wall_finder_server.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg6Twist_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN13geometry_msgs3msg6Twist_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<geometry_msgs::msg::Twist_<std::allocator<void> > >()'
+[2.053s] collect2: error: ld returned 1 exit status
+[2.055s] gmake[2]: *** [CMakeFiles/wall_finder_server.dir/build.make:175: wall_finder_server] Error 1
+[2.055s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wall_finder_server.dir/all] Error 2
+[2.058s] gmake: *** [Makefile:146: all] Error 2
+[2.060s] Invoked command in '/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation' returned '2': CMAKE_PREFIX_PATH=/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/install/robot_navigation:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/custom_interfaces:/home/mohamad/Inmind/Robotics-Session7-Assignment/Session7_ros2_ws/install/navigation_robot:/home/mohamad/Inmind/Robotics-Session6-Assignment/Session6_ros2_ws/install/session6_assignment:/home/mohamad/Inmind/ros2_ws/install/session5_academy:/home/mohamad/Inmind/Robotics-Session5-Ros2/session5_ros2_ws/install/session5_assignment:/home/mohamad/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation -- -j4 -l4

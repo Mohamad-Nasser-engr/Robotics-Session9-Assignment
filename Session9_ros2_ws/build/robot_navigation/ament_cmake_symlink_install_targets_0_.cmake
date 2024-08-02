@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/wall_finder_server" "/home/mohamad/Inmind/Robotics-Session9-Assignment/Session9_ros2_ws/build/robot_navigation/wall_follower" "TARGETS" "wall_finder_server" "wall_follower" "DESTINATION" "lib/robot_navigation")
