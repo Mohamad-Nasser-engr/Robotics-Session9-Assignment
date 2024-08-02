@@ -50,9 +50,8 @@ void LapTimeClient::feedback_callback(
     GoalHandleMeasureLapTime::SharedPtr,
     const std::shared_ptr<const MeasureLapTime::Feedback> feedback
 ) {
-    std::stringstream ss;
-    ss << "Elapsed time: " << 0.001 * round(1000 * feedback->elapsed_time) << " seconds.";
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), ss.str().c_str());
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Total lap time: %.3f seconds.", 0.001 * round(1000 * feedback->elapsed_time));
+
 }
 
 void LapTimeClient::result_callback(const GoalHandleMeasureLapTime::WrappedResult & result) {
@@ -69,14 +68,12 @@ void LapTimeClient::result_callback(const GoalHandleMeasureLapTime::WrappedResul
             RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Unknown result.");
             return;
     }
-    std::stringstream ss;
-    ss << "Total lap time: " << 0.001 * round(1000 * result.result->total_time) << " seconds.";
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), ss.str().c_str());
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Total lap time: %.3f seconds.", 0.001 * round(1000 * result.result->total_time));
+
     rclcpp::shutdown();
 }
 
 int main(int argc, char * argv[]) {
-    std::this_thread::sleep_for(std::chrono::seconds(30));
     rclcpp::init(argc, argv);
     auto client_node = std::make_shared<LapTimeClient>();
     client_node->send_goal();
